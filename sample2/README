@@ -1,0 +1,10 @@
+The app reads a trade file with each line comma delimited and creates a summary file
+this sample demonstrate of Makefile use and test case creation
+
+1. To build:
+    make tstat
+2. Test
+    make test
+3. To generate the output file output.csv using input.csv
+    ./tstat input.csv output.csv
+4. output.csv included here is output using provided input.csv 

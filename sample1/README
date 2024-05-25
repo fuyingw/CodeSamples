@@ -1,0 +1,7 @@
+This program demonstrate the use of lock-free ring buffer use to pass event from a
+producer thread to a consumer thread
+
+1. To build:
+    g++ --std=c++17 -o timer timer.cpp
+2. To run:
+    ./timer
