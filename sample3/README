@@ -26,3 +26,9 @@ Note:
     if a new order using an existing order id, order will be ignored
     when a trade happens, print a trade message.
 
+
+how to compile:
+    g++ -std=c++17 -o me MatchEngine.cpp
+
+To run:
+    cat sample.in | ./me
