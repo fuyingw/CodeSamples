@@ -1,0 +1,28 @@
+The MatchEngine (handle single symbol) Support the following messages:
+new order message: NEW side orderType price qty orderId
+order type can be GFD or IOC. IOC order will not stay on orderbook
+
+example:
+    NEW BUY GFD 3300 100 order0
+    NEW SELL IOC 3300 100 order1
+
+print order book: print book levels with price and quantity
+example:
+   PRINT
+
+modify order: MODIFY orderId side price qty
+example:
+   MODIFY order0 SELL 1000 800
+   
+Note:
+    order has to be the same side as original. if new qty is less than filled qty, cancel the order
+    if order id not exists, do nothing
+
+cancel order: CANCEL orderId
+example:
+    CANCEL order0
+
+Note:
+    if a new order using an existing order id, order will be ignored
+    when a trade happens, print a trade message.
+
